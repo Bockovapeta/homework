@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma;
+}
+
+.container {
+
+    max-width: 1140 px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+
+.top-header {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #ffffff;
+
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main-text {
+    width: 50%;
+    color: #000000;
+}
+
+.main-image {
+    width: 50%;
+}
+
+.main-image img {
+    width: 100%;
+    padding-top: 80px;
+}
+
+.subtitle {
+    font-family: Tahoma;
+    font-size: 30px;
+    font-weight: 400;
+    display: block;
+}
+
+.title {
+    font-family: Tahoma;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 25px;
+
+}
+
+.desc {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    line-height: 26px;
+}
+
+
+
+.price {
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px 60px;
+    box-shadow: 0 3px 6px rgba(173, 173, 173, 0.16);
+    border-radius: 6px;
+    margin-right: 30px;
+    font-family: 'HelveticaBold';
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 27px;
+}
+
+.green {
+    background-color: #4572d7;
+
+}
+
+.blue {
+    background-color: #ffffff;
+    color: #4572d7;
+    border: 1px solid #4572d7;
+
+}
+
+
+
+
+
+.about {
+    padding: 100px 0;
+    background-color: #f2f2f2;
+}
+
+.about-subheadline {
+    font-family: Tahoma;
+    font-size: 30px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 80px;
+    color: #333333;
+    text-align: center;
+}
+
+
+
+.about-item span {
+    display: block;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+    margin-top: 10px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.about-wrap {
+    display: flex;
+
+}
+
+.about-item {
+    width: 25%;
+    display: block;
+    text-align: center;
+
+}
+
+.about-item img {
+    padding-bottom: 20px;
+
+
+}
+
+
+
+.people-subheadline {
+    color: #333333;
+    font-family: Tahoma;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 27px;
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+
+.people {
+    background-color: #ffffff;
+}
+
+.people-foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 50px;
+
+}
+
+.people img {
+    width: 23%;
+    margin-bottom: 10px;
+}
+
+
+
+
+.footer {
+    background-color: #32325f;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    font-family: 'HelveticaBold';
+}
+
+.footer-block {
+    width: 33%;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-header {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    font-family: 'HelveticaBold';
+}
+
+.footer-name {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    font-family: 'HelveticaBold';
+}
+
+
+@media (max-width: 1024px) {
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .btn {
+        display: inline-block;
+        max-width: 250px;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .main-image,
+    .main-text {
+        width: 100%;
+    }
+
+
+    .main {
+        flex-direction: column;
+    }
+
+    .main-text {
+        order: 1;
+        margin-top: 40px;
+    }
+
+    .navbar {
+        margin-bottom: 100px;
+    }
+
+    .top-header {
+        padding-bottom: 100px;
+    }
+
+    .price {
+        margin-bottom: 30px;
+    }
+
+    .about-item {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .about-wrap {
+        flex-wrap: wrap;
+    }
+
+    .about {
+        padding: 60px 0 40px 0;
+    }
+
+
+    .people-foto img {
+        width: 50%;
+        margin-bottom: 5px;
+    }
+
+    .footer-block {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+    .footer-wrap {
+        flex-wrap: wrap;
+    }
+
+
+}
+
+
+@media (max-width: 580px) {
+    .about-item {
+        width: 100%;
+    }
+
+    .people-foto img {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .footer-block {
+        width: 100%;
+
+    }
+
+    .footer {
+        padding-bottom: 0;
+        padding-top: 30px;
+    }
+
+    .about-headline {
+        margin-bottom: 30px;
+    }
+
+}
