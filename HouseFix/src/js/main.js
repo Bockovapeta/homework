@@ -29,4 +29,30 @@ $(document).ready(function () {
         modal.removeClass('modal_active');
     });
 
+
+    //přidání rolování na slider - obrázky se nám po kliknutí budou přebíhat z jednoho na druhý
+    $('.slider').slick({
+        slidesToShow: 3,
+        prevArrow: $('.arrows__left'),
+        nextArrow: $('.arrows__right'),
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+
+                }
+            },
+            {
+                breakpoint: 760,
+                settings: {
+                    slidesToShow: 1,
+
+                }
+            },
+
+
+        ]
+    });
+
 });

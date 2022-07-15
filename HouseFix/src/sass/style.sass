@@ -34,6 +34,12 @@ img
     border-radius: 10px
     font-size: 15px
 
+.section-title
+    font-size: 30px
+    text-align: center
+    +bold
+    line-height: 45px
+
 .header
     padding: 20px 0px
     &-block
@@ -232,3 +238,28 @@ img
             position: absolute
             right: 0
             top: 0
+.portfolio
+    padding: 100px 0
+    background: $grey url('../img/portfolio-bg.png') left repeat-y
+    background-size: 50%
+    &__title
+        margin-bottom: 100px
+        color: $accent
+    &__arrows
+        max-width: 120ox
+        display: flex
+        justify-content: center
+        margin: auto
+        margin-top: 70px
+
+.arrows__left, .arrows__right
+    cursor: pointer
+
+.arrows__left img
+    margin-right: 30px
+
+.slider
+    &__item img
+        width: 380px
+        height: 260px
+        margin: auto
