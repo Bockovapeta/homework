@@ -18,6 +18,13 @@ close.addEventListener('click', function () {
 
 $(document).ready(function () {
 
+
+
+    //(napojení knihvny wow.js) napojení souboru wow js pro animaci při scrollování na daný element na stránce
+
+    new WOW().init();
+
+
     var button = $('#button');
     var modal = $('#modal');
     var close = $('#close');
