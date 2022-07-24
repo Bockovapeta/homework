@@ -35,6 +35,8 @@ $(document).ready(function () {
         slidesToShow: 3,
         prevArrow: $('.arrows__left'),
         nextArrow: $('.arrows__right'),
+
+        //odebrání zobrazených obrázků pro užší prostředí např. tablety a pro mobily
         responsive: [
             {
                 breakpoint: 1200,
