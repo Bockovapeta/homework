@@ -461,4 +461,105 @@ body {
   background-color: #ffd200;
   z-index: -1;
   transition: 0.2s;
+}
+
+.steps {
+  padding-bottom: 120px;
+}
+.steps__title {
+  margin-bottom: 60px;
+}
+.steps__subtitle {
+  margin-bottom: 75px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 900px) {
+  .icons {
+    display: block;
+  }
+}
+
+.icon {
+  text-align: center;
+  position: relative;
+}
+.icon:last-child::after {
+  display: none;
+}
+.icon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 72px;
+  height: 25px;
+  background-image: url("../img/icon-arrow.png");
+  top: -10px;
+  right: -95px;
+}
+@media (max-width: 900px) {
+  .icon::after {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .icon::after {
+    right: -70px;
+  }
+}
+.icon__image {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 3px solid #ffd200;
+  background-color: #fff;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .icon__image {
+    margin-bottom: 20px;
+  }
+}
+.icon__image img {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.icon__text {
+  display: inline-block;
+  max-width: 140px;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media (max-width: 768px) {
+  .icon__text {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+}
+
+.notice {
+  background-color: #ffc000;
+  padding: 100px 0;
+}
+.notice__text {
+  max-width: 750px;
+  text-align: center;
+  font-size: 32px;
+  margin: auto;
+  line-height: 50px;
+  font-weight: 300;
+}
+@media (max-width: 900px) {
+  .notice__text {
+    font-size: 25px;
+    line-height: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */
