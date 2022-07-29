@@ -25,6 +25,8 @@ $(document).ready(function () {
     new WOW().init();
 
 
+
+    // modální okno
     var button = $('#button');
     var modal = $('#modal');
     var close = $('#close');
@@ -35,6 +37,28 @@ $(document).ready(function () {
     close.on('click', function () {
         modal.removeClass('modal_active');
     });
+
+
+    // validace formulářů
+
+
+    $('#brief-form').validate({
+        rules: {
+            username: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            phone: "required"
+        },
+        messages: {
+            username: "Uveďte vaše jméno",
+            phone: "Uveďte vaše telefonní číslo",
+            email: "Potřebujeme váš email"
+        }
+    });
+
+
 
 
     //přidání rolování na slider - obrázky se nám po kliknutí budou přebíhat z jednoho na druhý
